@@ -1,10 +1,10 @@
 body {
   font-family: poppins;
-  background: black;
+  background: rgb(9, 27, 9);
 }
 header {
   margin: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,6 +46,37 @@ header a {
   background: white;
   color: black;
 }
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/drive-elephant.jpg");
+  background-repeat: no-repeat;
+
+  color: white;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+footer li {
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+section {
+  max-width: 100%px;
+  padding: 100px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 20px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 0;
