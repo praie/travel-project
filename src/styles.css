@@ -26,14 +26,14 @@ header h1 {
 header h2 {
   font-weight: 400;
   font-size: 40px;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0;
   color: white;
 }
 header h3 {
   font-weight: 900;
   font-size: 24px;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0;
   letter-spacing: 5px;
   color: white;
@@ -56,7 +56,7 @@ main {
 main h2 {
   font-weight: 700;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 5px;
   color: grey;
   opacity: 0.3;
@@ -84,6 +84,7 @@ main p {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -91,24 +92,80 @@ main p {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: black;
+  margin: 0;
+}
+.btn {
+  background-color: black;
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.grid-3-columns-last {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.text-center {
+  text-align: center;
+}
+.card-footer {
+  padding: 0 30px 30px;
 }
 
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url("../images/drive-elephant.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   color: white;
 }
 footer h3 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 30px;
+}
+footer ul {
+  padding: 0;
 }
 footer li {
   margin: 0;
   padding: 0;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
 }
 footer a {
   color: white;
@@ -121,7 +178,7 @@ footer a {
   grid-gap: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 0;
   }
