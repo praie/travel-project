@@ -89,6 +89,13 @@ main p {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
 section {
   max-width: 100%;
   margin: 0 auto;
